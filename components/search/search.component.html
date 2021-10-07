@@ -1,0 +1,11 @@
+<h1>Insira a sua busca:</h1>
+<div>
+    <input id="input-search" placeholder="juliette caindo">
+    <button id="submit-search" (click)="onSearch()">Buscar</button>
+</div>
+<div *ngIf="showResults">
+    <h2>Resultados</h2>
+    <app-results [items]='results'></app-results>
+</div>
+
+
